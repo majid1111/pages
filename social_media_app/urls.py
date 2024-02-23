@@ -1,6 +1,6 @@
 
 from django.urls import path
-from .views import PageListCreateView, PostListCreateView, LikeListCreateView
+from .api import PageListCreateView, PostListCreateView, LikeListCreateView
 
 urlpatterns = [
     path('pages/', PageListCreateView.as_view(), name='page-list-create'),
